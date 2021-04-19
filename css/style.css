@@ -26,12 +26,28 @@ h1 {
     font-family: 'Lexend Deca', sans-serif;
     font-size: 2.2rem;
 }
-p {
-    color: var(--slightly-transparent-white);
-    font-family: 'Inter', sans-serif;
+
+
+
+/******** Stats *********/
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 50px;
+}
+h2 {
+    color: var(--white);
+    text-transform: uppercase;
+}
+.stats p {
+    font-size: .7rem;
+    padding-top: 5px;
+    color: var(--more-transparent-white);
+    text-transform: uppercase;
+    font-family: 'Lexend Deca', sans-serif;
 }
 
-/********   **********/
+/********  Container   **********/
 .container {
     max-width: 1080px;
     margin: 200px auto;
@@ -40,6 +56,8 @@ p {
     grid-template-columns: 1fr 1fr;
     border-radius: 8px 0 0 8px;
 }
+
+/*******  Image ********/
 .image {
     order: 2;
     width: 540px;
@@ -58,10 +76,20 @@ p {
     height: 100%;
     background: var(--image-overlay);
 }
+
+/******* Content *******/
+
 .content {
     order: 1;
     width: 540px;
-    padding: 60px;
+    padding: 70px;
+}
+.content > p {
+    color: var(--more-transparent-white);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.7;
+    padding-top: 45px;
+    width: 350px;
 }
 .content h1 span {
     color: var(--soft-violet);
